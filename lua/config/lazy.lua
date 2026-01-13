@@ -28,7 +28,9 @@ require("lazy").setup({
     { import = "plugins.lsp" },
     { import = "plugins.autopairs" },
     { import = "plugins.kanagawa" },
-    { import = "plugins.neo-tree" }
+    { import = "plugins.neo-tree" },
+    { import = "plugins.bufferline" },
+    { import = "plugins.lualine" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
