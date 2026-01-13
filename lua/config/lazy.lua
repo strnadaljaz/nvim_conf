@@ -26,7 +26,7 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins.lsp" },
-    { import = "plugins.autopairs " },
+    { import = "plugins.autopairs" },
     { import = "plugins.catppuccin" },
   },
   -- Configure any other settings here. See the documentation for more details.
