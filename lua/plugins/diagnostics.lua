@@ -6,7 +6,7 @@ return {
             lspconfig.clangd.setup({})
             
             -- Configure diagnostics display
-            vim.diagnostic. config({
+            vim.diagnostic.config({
                 -- Show diagnostics as virtual text at end of line
                 virtual_text = {
                     prefix = "●",

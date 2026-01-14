@@ -1,5 +1,10 @@
 require("config.lazy")
 require("config.keymaps")
+
+vim.opt.guicursor = {
+    "i:underline-blinkon400-blinkoff400",
+}
+
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true
