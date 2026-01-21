@@ -2,8 +2,8 @@ return {
   "neovim/nvim-lspconfig",
   dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" },
   config = function()
-    -- Setup tsserver
-    require("lspconfig").tsserver.setup({
+    -- Configure ts_ls (typescript language server) using vim.lsp.config to avoid deprecated framework
+    vim.lsp.config('ts_ls', {
       on_attach = function(client, bufnr)
         -- Keymaps for diagnostics (optional)
         local opts = { noremap=true, silent=true, buffer=bufnr }
