@@ -2,13 +2,8 @@ return {
   "neovim/nvim-lspconfig",
   dependencies = { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" },
   config = function()
-    -- Ensure TS LSP is installed
-    require("mason-lspconfig").setup({
-      ensure_installed = { "ts_ls", "eslint" },
-    })
-
     -- Setup tsserver
-    require("lspconfig").ts_ls.setup({
+    require("lspconfig").tsserver.setup({
       on_attach = function(client, bufnr)
         -- Keymaps for diagnostics (optional)
         local opts = { noremap=true, silent=true, buffer=bufnr }
