@@ -34,6 +34,7 @@ require("lazy").setup({
     { import = "plugins.diagnostics" },
     { import = "plugins.gitsigns" },
     { import = "plugins.emmet" },
+    { import = "plugins.treesitter" },
     { import = "plugins.typescript" },
   },
   -- Configure any other settings here. See the documentation for more details.
