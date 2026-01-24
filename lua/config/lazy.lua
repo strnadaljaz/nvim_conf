@@ -29,13 +29,14 @@ require("lazy").setup({
     { import = "plugins.autopairs" },
     { import = "plugins.kanagawa" },
     { import = "plugins.neo-tree" },
-    { import = "plugins.bufferline" },
+    --{ import = "plugins.bufferline" },
     { import = "plugins.lualine" },
     { import = "plugins.diagnostics" },
     { import = "plugins.gitsigns" },
     { import = "plugins.emmet" },
     { import = "plugins.treesitter" },
     { import = "plugins.typescript" },
+    { import = "plugins.smear_cursor" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
