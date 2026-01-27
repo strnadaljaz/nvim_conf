@@ -27,8 +27,8 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins.lsp" },
     { import = "plugins.autopairs" },
-    { import = "plugins.kanagawa" },
-    { import = "plugins.neo-tree" },
+    --{ import = "plugins.kanagawa" },
+    --{ import = "plugins.neo-tree" },
     --{ import = "plugins.bufferline" },
     { import = "plugins.lualine" },
     { import = "plugins.diagnostics" },
@@ -37,10 +37,11 @@ require("lazy").setup({
     { import = "plugins.treesitter" },
     { import = "plugins.typescript" },
     { import = "plugins.smear_cursor" },
+    { import = "plugins.telescope" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "kanagawa" } },
+  install = { colorscheme = { "easy-eyes" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = false },
 })

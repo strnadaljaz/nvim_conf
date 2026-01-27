@@ -1,6 +1,8 @@
 require("config.lazy")
 require("config.keymaps")
 
+require("themes.easy-eyes")
+
 vim.opt.guicursor = {
   "n-v-c:block",
   "i:block-blinkon500-blinkoff500",

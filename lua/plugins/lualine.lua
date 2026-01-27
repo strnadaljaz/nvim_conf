@@ -7,7 +7,7 @@ return {
     require("lualine").setup({
       options = {
         icons_enabled = true,
-        theme = "kanagawa",  -- Matches your colorscheme
+        theme = "auto",  -- Auto-detect from colorscheme
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
         disabled_filetypes = {
