@@ -13,7 +13,12 @@ return {
     },
     config = function(_, opts)
       require("nightfox").setup(opts)
-      vim.cmd.colorscheme("carbonfox")
+      vim.cmd.colorscheme("kanso-zen")
     end,
+  },
+  {
+    "webhooked/kanso.nvim",
+    lazy = false,
+    priority = 1000,
   },
 }
