@@ -8,10 +8,7 @@ return {
         transparent = false,
       },
       palettes = {
-        carbonfox = {
-          bg1 = "#000000",
-          bg0 = "#000000",
-        },
+        carbonfox = {},
       },
     },
     config = function(_, opts)

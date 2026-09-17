@@ -8,7 +8,8 @@ end
 
 local function get_cpp_fallback_flags()
   local flags = { "-std=c++20" }
-  local sdk_includes = vim.fn.glob("/var/lib/flatpak/runtime/org.freedesktop.Sdk/x86_64/*/*/files/include/c++/*", false, true)
+  local sdk_includes =
+    vim.fn.glob("/var/lib/flatpak/runtime/org.freedesktop.Sdk/x86_64/*/*/files/include/c++/*", false, true)
   table.sort(sdk_includes)
 
   for i = #sdk_includes, 1, -1 do
@@ -56,7 +57,7 @@ return {
     },
   },
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       opts.ensure_installed = opts.ensure_installed or {}
       add_unique(opts.ensure_installed, {
