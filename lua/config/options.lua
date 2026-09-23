@@ -6,4 +6,4 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 
-vim.opt.guicursor = "n-v-c:block,i:block-blinkwait1000-blinkon500-blinkoff500"
+-- vim.opt.guicursor = "n-v-c:block,i:block-blinkwait1000-blinkon500-blinkoff500"
