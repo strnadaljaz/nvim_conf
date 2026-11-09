@@ -9,7 +9,7 @@ return {
       formatters = {
         ["clang-format"] = {
           prepend_args = {
-            "--style={IndentWidth: 4, TabWidth: 4, UseTab: Never, SortIncludes: true}",
+            "--style={IndentWidth: 2, TabWidth: 2, UseTab: Never, SortIncludes: true}",
           },
         },
       },
