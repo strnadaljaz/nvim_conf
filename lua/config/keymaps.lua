@@ -15,6 +15,5 @@ vim.keymap.set("v", "<C-/>", "gc", {
 })
 
 vim.keymap.set("n", "<C-d>", function()
-  local config = vim.diagnostic.config()
-  vim.diagnostic.config({ virtual_text = not config.virtual_text })
-end, { desc = "Toggle inline diagnostic virtual text" })
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics " })
